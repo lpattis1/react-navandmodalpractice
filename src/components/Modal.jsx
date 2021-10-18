@@ -10,7 +10,7 @@ const Modal = ({ title, imgSrc }) => {
   return (
     <>
       <div
-        onClick={toggleModal}
+        onClick={isOpen ? toggleModal : null}
         className={isOpen ? "modal-bg-open" : "modal-bg-closed"}
       >
         <div className="modal">
